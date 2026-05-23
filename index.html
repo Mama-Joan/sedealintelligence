@@ -887,6 +887,7 @@ function cardShell(d,i){
       '<div class="ch-r">' +
         '<input class="amt-input" id="amt-'+i+'" value="'+esc(d['Deal Value (ARR)']||'TBC')+'" onclick="event.stopPropagation()" onblur="sv(this,'+d._row+',\'Deal Value (ARR)\')" onkeydown="if(event.key===\'Enter\'){event.stopPropagation();this.blur()}">' +
         hbadge(d['Health Status'])+fbadge(fc(d))+
+        '<button class="delete-btn" onclick="delBtnClick(this,'+i+','+d._row+',event)" title="Remove deal">Remove</button>' +
         '<span class="chev" id="cv-'+i+'">▾</span>' +
       '</div>' +
     '</div>' +
